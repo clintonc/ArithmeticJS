@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+<link rel="stylesheet" href="table.css" />
+<h1>Distribution Demo</h1>
+<p>Enter an expression and click "Expand!" to see the effects of left- and right-distribution.</p>
+<form onsubmit="render(); return false">
+<input id="function" value="x*(x-1)*(x+1)*(x^3+x)" type="text" />
+<input type="button" id="btn" value="Expand!" onclick="render(); return false;"/>
+</form>
+<div id="result"></div>
+<script src="../arithmetic.js"></script>
+<script src="expand.js"></script>
+</html>

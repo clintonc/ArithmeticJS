@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<link rel="stylesheet" href="table.css" />
+<h1>Table of Values Demo</h1>
+<p>Type a function in the box below.  Click "Tabulate!" to generate a
+table of values for that function.</p>
+
+<form onsubmit="render(); return false">
+<input id="function" value="x*cos(pi*x)" type="text" />
+<input type="button" id="btn" value="Tabulate!" onclick="render(); return false;"/>
+</form>
+<p>Lexed form: <pre id="lexform">...</pre></p>
+<p>Prefix form: <pre id="prefixform">...</pre></p>
+<p>Simplified prefix form: <pre id="simplifiedprefixform">...</pre></p>
+<p>Infix form: <pre id="infixform">...</pre></p>
+<div id="tablediv">
+<table>
+  <thead>
+    <tr><th>x</th><th>y</th></tr>
+  </thead>
+  <tbody>
+  </tbody>
+</div>
+<script src="../arithmetic.js"></script>
+<script src="table.js"></script>
+</html>
